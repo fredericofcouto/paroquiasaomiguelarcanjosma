@@ -230,7 +230,7 @@ function App() {
                 <div className="container mx-auto px-4">
                   <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                      Doações e Contribuições
+                      Contribuições e Liturgia Diária
                     </h2>
                     <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
                       Sua contribuição é fundamental para mantermos nossa missão evangelizadora e obras sociais.
