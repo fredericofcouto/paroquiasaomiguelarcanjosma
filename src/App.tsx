@@ -1,19 +1,19 @@
 import {
-    ArrowRight,
-    Calendar,
-    Church,
-    Clock,
-    Facebook,
-    Heart,
-    Instagram,
-    Mail,
-    MapPin,
-    Menu,
-    MessageCircle,
-    Phone,
-    QrCode,
-    X,
-    Youtube
+  ArrowRight,
+  Calendar,
+  Church,
+  Clock,
+  Facebook,
+  Heart,
+  Instagram,
+  Mail,
+  MapPin,
+  Menu,
+  MessageCircle,
+  Phone,
+  QrCode,
+  X,
+  Youtube
 } from 'lucide-react';
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
@@ -245,8 +245,8 @@ function App() {
                         },
                         {
                           icon: <Heart className="h-12 w-12 mx-auto mb-4 text-blue-800" />,
-                          title: "Transferência",
-                          description: "Doe através de transferência bancária"
+                          title: "Liturgia Diária",
+                          description: "Que a Palavra de Deus seja nossa luz e guia"
                         },
                         {
                           icon: <Calendar className="h-12 w-12 mx-auto mb-4 text-blue-800" />,
