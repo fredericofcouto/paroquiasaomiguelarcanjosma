@@ -251,7 +251,7 @@ function App() {
                         {
                           icon: <Calendar className="h-12 w-12 mx-auto mb-4 text-blue-800" />,
                           title: "Dízimo",
-                          description: "Cadastre-se como dizimista"
+                          description: "Não deixe de contribuir"
                         }
                       ].map((item, index) => (
                         <div
