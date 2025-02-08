@@ -1,19 +1,19 @@
 import {
-  ArrowRight,
-  Calendar,
-  Church,
-  Clock,
-  Facebook,
-  Heart,
-  Instagram,
-  Mail,
-  MapPin,
-  Menu,
-  MessageCircle,
-  Phone,
-  QrCode,
-  X,
-  Youtube
+    ArrowRight,
+    Calendar,
+    Church,
+    Clock,
+    Facebook,
+    Heart,
+    Instagram,
+    Mail,
+    MapPin,
+    Menu,
+    MessageCircle,
+    Phone,
+    QrCode,
+    X,
+    Youtube
 } from 'lucide-react';
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
@@ -436,8 +436,8 @@ function App() {
           </div>
         } />
         <Route path="/catequese" element={<Catequese />} />
-        <Route path="/avisos-semanais" element={<AvisosSemanais />} />
         <Route path="/festa-padroeiro" element={<FestaPadroeiro />} />
+        <Route path="/avisos-semanais" element={<AvisosSemanais />} />
         <Route path="/web-radio" element={<WebRadio />} />
       </Routes>
     </Router>

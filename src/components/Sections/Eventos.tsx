@@ -1,4 +1,5 @@
 import { ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const eventos = [
   {
@@ -61,15 +62,25 @@ export default function Eventos() {
                   {evento.titulo}
                 </h3>
                 <p className="text-gray-600 mb-4">{evento.data}</p>
-                <a
-                  href={evento.link}
-                  target={evento.isExternal ? '_blank' : '_self'}
-                  rel="noopener noreferrer"
-                  className="text-blue-800 hover:text-blue-700 inline-flex items-center font-medium"
-                >
-                  {evento.isExternal ? 'Acessar Web Rádio' : 'Saiba mais'}
-                  <ChevronRight className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
-                </a>
+                {evento.isExternal ? (
+                  <a
+                    href={evento.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-800 hover:text-blue-700 inline-flex items-center"
+                  >
+                    Acessar Web Rádio
+                    <ChevronRight className="h-4 w-4 ml-1" />
+                  </a>
+                ) : (
+                  <Link
+                    to={evento.link || '/'}
+                    className="text-blue-800 hover:text-blue-700 inline-flex items-center"
+                  >
+                    Saiba mais
+                    <ChevronRight className="h-4 w-4 ml-1" />
+                  </Link>
+                )}
               </div>
             </div>
           ))}
@@ -95,15 +106,25 @@ export default function Eventos() {
                   {evento.titulo}
                 </h3>
                 <p className="text-gray-600 mb-4">{evento.data}</p>
-                <a
-                  href={evento.link}
-                  target={evento.isExternal ? '_blank' : '_self'}
-                  rel="noopener noreferrer"
-                  className="text-blue-800 hover:text-blue-700 inline-flex items-center font-medium"
-                >
-                  {evento.isExternal ? 'Acessar Web Rádio' : 'Saiba mais'}
-                  <ChevronRight className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
-                </a>
+                {evento.isExternal ? (
+                  <a
+                    href={evento.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-800 hover:text-blue-700 inline-flex items-center"
+                  >
+                    Acessar Web Rádio
+                    <ChevronRight className="h-4 w-4 ml-1" />
+                  </a>
+                ) : (
+                  <Link
+                    to={evento.link || '/'}
+                    className="text-blue-800 hover:text-blue-700 inline-flex items-center"
+                  >
+                    Saiba mais
+                    <ChevronRight className="h-4 w-4 ml-1" />
+                  </Link>
+                )}
               </div>
             </div>
           ))}
