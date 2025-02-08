@@ -23,7 +23,7 @@ Estrutura do Projeto
 
 Como Executar o Projeto Localmente
 1. Clone o repositório:
-   git clone https://github.com/fredericofcouto/paroquiasaomiguelcanjosma.git
+   git clone https://github.com/fredericofcouto/paroquiasaomiguelarcanjosma.git
    cd paroquiasaomiguelarcanjosma
 
 2. Instale as dependências:
