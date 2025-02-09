@@ -1,4 +1,4 @@
-import { ChevronRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const eventos = [
@@ -6,25 +6,29 @@ const eventos = [
     titulo: 'Catequese',
     data: '15 de Abril',
     imagem: 'https://i.imgur.com/Yl8rUjc.jpg',
-    link: '/catequese'
+    link: '/catequese',
+    buttonText: 'Ver Catequese'
   },
   {
     titulo: 'Festa do Padroeiro',
     data: '29 de setembro',
     imagem: 'https://i.imgur.com/bCNj9FO.jpg',
-    link: '/festa-padroeiro'
+    link: '/festa-padroeiro',
+    buttonText: 'Ver Festa'
   },
   {
     titulo: 'Avisos semanais',
     data: '10 de Junho',
     imagem: 'https://i.imgur.com/mDunjZK.png',
-    link: '/avisos-semanais'
+    link: '/avisos-semanais',
+    buttonText: 'Ver Avisos'
   },
   {
     titulo: 'Web Rádio São Miguel',
     data: 'A Hora do Angelus - De Segunda a Sexta-feira as 18:00',
     imagem: 'https://i.imgur.com/ESfX1OX.png',
-    link: '/web-radio'
+    link: '/web-radio',
+    buttonText: 'Acessar Rádio'
   }
 ];
 
@@ -58,10 +62,10 @@ export default function Eventos() {
                 <p className="text-gray-600 mb-4">{evento.data}</p>
                 <Link
                   to={evento.link || '/'}
-                  className="text-blue-800 hover:text-blue-700 inline-flex items-center"
+                  className="text-blue-800 hover:text-blue-700 inline-flex items-center group"
                 >
-                  Saiba mais
-                  <ChevronRight className="h-4 w-4 ml-1" />
+                  {evento.buttonText}
+                  <ArrowRight className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
