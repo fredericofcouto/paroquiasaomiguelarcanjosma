@@ -246,7 +246,8 @@ function App() {
                         {
                           icon: <Heart className="h-12 w-12 mx-auto mb-4 text-blue-800" />,
                           title: "Liturgia Diária",
-                          description: "Que a Palavra de Deus seja nossa luz e guia"
+                          description: "Que a Palavra de Deus seja nossa luz e guia",
+                          link: "https://sagradaliturgia.com.br/"
                         },
                         {
                           icon: <Calendar className="h-12 w-12 mx-auto mb-4 text-blue-800" />,
@@ -265,6 +266,17 @@ function App() {
                             {item.title}
                           </h3>
                           <p className="text-gray-600">{item.description}</p>
+                          {item.link && (
+                            <a
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center text-blue-800 hover:text-blue-700 mt-4"
+                            >
+                              Ler a Liturgia
+                              <ArrowRight className="h-4 w-4 ml-1" />
+                            </a>
+                          )}
                         </div>
                       ))}
                     </div>
